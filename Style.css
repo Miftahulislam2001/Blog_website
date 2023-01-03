@@ -1,0 +1,536 @@
+/* Reset code and common code Start Hear */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+    font-weight: 400;
+}
+
+html{
+    background-color: #fafafa;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #fff;
+    width: 120rem;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.section-heading{
+    font-size: 7rem;
+    text-align: center;
+    font-family: 'Italianno', cursive;
+}
+
+.section-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5rem 1rem;
+    min-height: 95vh;
+}
+
+.text-white{
+    color: white;
+}
+
+.btn{
+    background-color:rgb(230,159,.8);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 0.8rem 0;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+
+}
+/* Reset code and common code End Hear */
+
+/* Header Start Hear */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 1.5rem 1rem;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: 5vh;
+}
+
+.logo-figure{
+    border: 1px solid white;
+}
+
+.logo{
+    font-size: 4rem;
+}
+
+#menu-icon{
+    display: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 5px;
+    transition: all 0.3s;
+}
+
+nav li:last-child{
+    margin-right: 3px;
+}
+
+nav li:hover{
+    background-color:rgb(109, 83, 27);
+    border-radius: 5px;
+}
+
+.nav-link{
+    font-size: 1.7rem;
+    color: #fff;
+    cursor: pointer;
+}
+/* Header Ends Hear */
+
+/* banner section start hear */
+#blog-banner-section{
+    padding: 5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+
+#blog-banner-section article{
+    flex-basis: 50%;
+    margin: 1rem;
+}
+
+.banner-heading{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 3rem;
+    background-color: black;
+    color: white;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+}
+
+.banner-desc{
+    font-size: 1.7rem;
+
+}
+
+#blog-banner-section aside{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.banner-img{
+    width: 55rem;
+    height: 55rem;
+    border: 0.3rem solid;
+}
+/* banner section End hear */
+
+/* Blog about section start hear */
+#blog-about{
+   
+    background-color: #4c4c4c;
+
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+
+}
+
+.card{
+    flex: 1;
+    border-radius: 5px;
+    background-color: #a09d9d;
+    padding:3rem 1rem;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    transition:transform .3s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card-header{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.card-desc{
+    padding: 0.4rem;
+    text-align: justify;
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+
+}
+
+.card-btn{
+    align-self: center;
+    width: 80%;
+}
+/* Blog about section Ends hear */
+
+/* Archives Start Hear */
+#archives{
+
+}
+
+.archives-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-top: 00.1rem solid;
+    border-bottom: 00.1rem solid;
+
+}
+
+.arcchives-container-lists{
+    display: flex;
+    text-align: center;
+}
+
+.arcchives-container-list{
+    margin: 2rem;
+}
+
+.archives-img{
+    width: 100%;
+    height: 100%;
+    border-radius:0.6rem;
+    transition: transform 0.3s;
+}
+
+.archives-img:hover{
+    transform: scale(1.1);
+}
+
+
+/* Archives End Hear */
+
+/* Blog post start hear */
+.blog-post-heading{
+    margin-bottom: 5rem;
+}
+
+.blog-post{
+    width: 70%;
+    display: flex;
+    margin: 1rem 0;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0 0.1rem #222;
+    transition:transform 0.3s;
+}
+
+.blog-post:hover{
+    transform: scale(1.1);
+}
+
+.blog-post-aside{
+    flex: 1;
+}
+
+.blog-content{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+
+.blog-post-img{
+    width: 100%;
+    height: 100%;
+}
+
+.blog-heading{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.blog-sub_heading{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.blog-desc{
+    font-size: 1.6rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.blog-btn{
+    width: 25%;
+
+}
+/* Blog post Ends hear */
+
+/* Contect Section Start Hear  */
+#contect-section{
+    background-color: #4c4c4c;
+    min-height: 90vh;
+}
+
+#contact-form{
+    padding: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0 0.1rem #222;
+    margin: 1rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control{
+    margin-bottom:1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control label{
+    font-size: 1.6rem;
+    flex: 0.3;
+}
+
+.form-control input,textarea{
+    flex: 0.7;
+    width: 40rem;
+    font-size: 1.6rem;
+    padding: 1.5rem 1.5rem;
+    border: none;
+    border-radius: 0.6rem;
+}
+
+.form-control textarea{
+    resize: none;
+    height:9rem;
+}
+
+.contect-btn{
+    width: 15rem;
+    font-weight: bold;
+}
+
+.form-btn-field{
+  
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+/* Contect Section ends Hear  */
+
+/* Footer Section Start hear */
+footer{
+    background-color:black;
+    color: white;
+    min-height: 5vh;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyrigrt-text{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.footer-icon{
+    font-size: 2.5rem;
+}
+/* Footer Section Ends hear */
+
+/* Responsive start hear */
+@media (max-width:992px){
+    #blog-banner-section{
+        flex-direction: column;
+    }
+
+    #blog-banner-section article{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
+    .card-container{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+
+
+}
+@media (max-width:768px){
+    html{
+        font-size: 55.5%;
+    }
+
+   
+    #blog-banner-section article{
+        width: 80%;
+    }
+
+    .card-container{
+        width: 80%;
+    }
+
+    #archives{
+        min-height: auto;
+    }
+
+    .blog-post{
+        flex-direction: column;
+        margin-bottom: 3rem;
+        width: 80%;
+    }
+
+
+    #contect-section{
+        min-height: auto;
+    }
+}
+@media (max-width:600px){
+    html{
+        font-size: 48.5%;
+    }
+    header{
+        flex-direction: column;
+    }
+
+    #menu-icon{
+        display: block;
+        margin-top:1rem;
+        cursor: pointer;
+        padding: 1rem;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    nav ul{
+        padding: 2.5rem;
+    }
+
+    nav li{
+        display: block;
+        margin-right: 0;
+        margin: 1rem 0;
+        text-align: center;
+        transition:none;
+        
+        
+    }
+
+    nav li:hover{
+        width: 300px;
+    }
+
+    #blog-banner-section{
+        min-height: auto;
+    }
+
+    #blog-banner-section article{
+        width: 90%;
+    }
+
+    .banner-img{
+        max-width: 100%;
+    }
+
+    #blog-about{
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
+
+    .card-container{
+        width: 90%;
+    }
+
+    .arcchives-container-lists{
+        flex-wrap: wrap;
+    }
+
+    .blog-post{
+        flex-direction: column;
+        margin-bottom: 3rem;
+        width: 90%;
+    }
+
+    #contact-form{
+        width: 90%;
+    }
+
+    .form-control{
+        flex-direction: column;
+        margin: 0.5rem;
+    }
+
+    .form-control input,textarea{
+        max-width: 100%;
+    }
+
+    .form-control label{
+        margin-bottom: 1rem;
+
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    #menubar2{
+        display: flex;
+    }
+
+    header{
+        position: relative;
+    }
+
+
+    
+}
+@media (max-width:400px){
+
+}
+/* Responsive end hear */
